@@ -4,7 +4,6 @@ import gabriel.dev.uolbackend.enities.Hero;
 import gabriel.dev.uolbackend.enities.HeroGroup;
 
 public record HeroDto(String name, String email, String phoneNumber, HeroGroup heroGroup) {
-
     public Hero from(HeroDto heroDto) {
         Hero hero = new Hero();
         hero.setName(heroDto.name);
@@ -13,5 +12,4 @@ public record HeroDto(String name, String email, String phoneNumber, HeroGroup h
         hero.setHeroGroup(heroDto.heroGroup);
         return hero;
     }
-
 }
