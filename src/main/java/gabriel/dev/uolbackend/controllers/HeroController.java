@@ -24,9 +24,9 @@ public class HeroController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void createHero(@RequestBody @Valid HeroDto heroDto) {
+    public Hero createHero(@RequestBody @Valid HeroDto heroDto) {
         logger.info("[HeroController] Create a hero");
-        heroService.createHero(heroDto);
+        return heroService.createHero(heroDto);
     }
 
 
