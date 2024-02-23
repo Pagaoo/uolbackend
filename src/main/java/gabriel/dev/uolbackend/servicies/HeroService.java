@@ -20,9 +20,8 @@ public class HeroService {
         return heroRepository.findAll();
     }
 
-    public Hero createHero(final HeroDto heroDto) {
-        return heroRepository.save(heroDto.from(heroDto));
-        //Falta colocar o grupo do héroi
+    public void createHero(HeroDto heroDto) {
+        heroRepository.save(heroDto.from(heroDto));
     }
 
 }
