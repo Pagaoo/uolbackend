@@ -1,5 +1,6 @@
 package gabriel.dev.uolbackend.enities;
 
+import gabriel.dev.uolbackend.dto.HeroDto;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -25,4 +26,10 @@ public class Hero {
     private String codiname;
     private HeroGroup heroGroup;
 
+    public Hero(HeroDto heroDto) {
+        this.name = heroDto.name();
+        this.email = heroDto.email();
+        this.phoneNumber = heroDto.phoneNumber();
+        this.heroGroup = heroDto.heroGroup();
+    }
 }
