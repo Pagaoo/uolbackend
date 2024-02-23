@@ -1,6 +1,5 @@
 package gabriel.dev.uolbackend.enities;
 
-import gabriel.dev.uolbackend.dto.HeroDto;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -9,7 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "heros")
+@Table(name = "heroes")
 @Getter
 @Setter
 @AllArgsConstructor
@@ -23,6 +22,7 @@ public class Hero {
     @NotBlank
     private String email;
     private String phoneNumber;
+    private String codiname;
     private HeroGroup heroGroup;
 
 }
