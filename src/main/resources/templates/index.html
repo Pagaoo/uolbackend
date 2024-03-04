@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Herói</title>
+</head>
+<body>
+   <h1>Cadastro de Herói</h1>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Telefone:</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label>Quero ser do grupo:</label>
+
+        <input type="radio" id="liga-justica" name="heroGroup" value="LIGA_DA_JUSTICA">
+        <label for="liga-justica">Liga da justiça</label>
+
+        <input type="radio" id="vingadores" name="heroGroup" value="VINGADORES">
+        <label for="vingadores">Vingadores</label>
+
+        <button type="button" id="createHero">Cadastrar</button>
+        <button type="button" id="listHeroes">Lista de Heróis</button>
+
+    </form>
+</body>
+</html>

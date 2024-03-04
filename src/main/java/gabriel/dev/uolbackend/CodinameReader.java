@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
+import gabriel.dev.uolbackend.enities.Hero;
 import jakarta.annotation.PostConstruct;
 import lombok.Getter;
 import org.springframework.core.env.Environment;
