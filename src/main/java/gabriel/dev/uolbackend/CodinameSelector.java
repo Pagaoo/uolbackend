@@ -14,12 +14,12 @@ public class CodinameSelector {
 
     public String selectCodiname(HeroGroup heroGroup) {
         if (heroGroup == HeroGroup.LIGA_DA_JUSTICA) {
-            String match = codinameReader.getLigaJusticaCodinames().stream().findFirst().orElseThrow();
-            this.codinameReader.getLigaJusticaCodinames().remove(match);
-            return match;
+            String codiname = codinameReader.getLigaJusticaCodinames().stream().findFirst().orElseThrow();
+            this.codinameReader.getLigaJusticaCodinames().remove(codiname);
+            return codiname;
         }
-        String match = codinameReader.getVingadoresCodinames().stream().findFirst().orElseThrow();
-        this.codinameReader.getVingadoresCodinames().remove(match);
-        return match;
+        String codiname = codinameReader.getVingadoresCodinames().stream().findFirst().orElseThrow();
+        this.codinameReader.getVingadoresCodinames().remove(codiname);
+        return codiname;
     }
 }
