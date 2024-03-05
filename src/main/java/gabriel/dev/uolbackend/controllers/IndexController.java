@@ -13,5 +13,4 @@ public class IndexController {
         modelAndView.setViewName("index.html");
         return modelAndView;
     }
-
 }
